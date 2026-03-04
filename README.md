@@ -14,13 +14,13 @@ Ansible automation skills for Claude Code: playbook development, debugging, shel
 /plugin install ansible-skills@hello-ansible-skills
 ```
 
-### Manual Installation
+### Development / Local Testing
 
-Clone the repository and symlink to your Claude plugins directory:
+Clone the repository and use `--plugin-dir` to load it directly:
 
 ```bash
 git clone https://github.com/sigridjineth/hello-ansible-skills.git
-ln -s $(pwd)/hello-ansible-skills ~/.claude/plugins/ansible-skills
+claude --plugin-dir ./hello-ansible-skills
 ```
 
 ### Verify Installation
@@ -101,8 +101,7 @@ Help me set up Ansible for my 5 Ubuntu servers step by step
 ```
 hello-ansible-skills/
 ├── .claude-plugin/
-│   ├── plugin.json          # Plugin metadata
-│   └── marketplace.json     # Marketplace configuration
+│   └── plugin.json          # Plugin metadata
 ├── skills/
 │   ├── ansible-playbook/
 │   │   └── SKILL.md
@@ -112,11 +111,14 @@ hello-ansible-skills/
 │   │   └── SKILL.md
 │   └── ansible-interactive/
 │       └── SKILL.md
-├── my-ansible/              # Example Ansible project
+├── my-ansible/              # Example Ansible project (excluded from plugin cache)
 │   ├── ansible.cfg
 │   ├── inventory
 │   ├── roles/
 │   └── docs/                # Ansible tutorial (12 sections)
+├── marketplace.json         # Marketplace configuration
+├── .pluginignore            # Excludes examples from plugin cache
+├── CHANGELOG.md
 ├── README.md
 └── LICENSE
 ```

@@ -1,0 +1,8 @@
+# Example Ansible project (tutorial content, not needed for plugin)
+my-ansible/
+
+# Vagrant VM provisioning files (tutorial infrastructure)
+Vagrantfile
+init_cfg.sh
+init_cfg2.sh
+.vagrant/

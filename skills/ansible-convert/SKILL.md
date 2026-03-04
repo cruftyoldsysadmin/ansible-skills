@@ -1,6 +1,7 @@
 ---
 name: ansible-convert
 description: Use when converting shell scripts to Ansible playbooks. Use when migrating bash automation, manual procedures, or Dockerfiles to idempotent Ansible tasks.
+argument-hint: "[script-path-or-paste]"
 ---
 
 # Shell to Ansible Conversion

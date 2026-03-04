@@ -1,7 +1,7 @@
 {
   "name": "ansible-skills",
   "description": "Ansible automation skills for Claude Code: playbook development, debugging, shell conversion, and interactive workflows",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "sigridjineth"
   },

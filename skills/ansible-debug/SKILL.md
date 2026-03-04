@@ -1,6 +1,7 @@
 ---
 name: ansible-debug
 description: Use when playbooks fail with UNREACHABLE, permission denied, MODULE FAILURE, or undefined variable errors. Use when SSH connections fail or sudo password is missing.
+argument-hint: "[error-message]"
 ---
 
 # Ansible Debugging
