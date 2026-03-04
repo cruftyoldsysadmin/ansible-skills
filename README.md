@@ -101,7 +101,8 @@ Help me set up Ansible for my 5 Ubuntu servers step by step
 ```
 hello-ansible-skills/
 ├── .claude-plugin/
-│   └── plugin.json          # Plugin metadata
+│   ├── plugin.json          # Plugin metadata
+│   └── marketplace.json     # Marketplace configuration
 ├── skills/
 │   ├── ansible-playbook/
 │   │   └── SKILL.md
@@ -116,7 +117,6 @@ hello-ansible-skills/
 │   ├── inventory
 │   ├── roles/
 │   └── docs/                # Ansible tutorial (12 sections)
-├── marketplace.json         # Marketplace configuration
 ├── .pluginignore            # Excludes examples from plugin cache
 ├── CHANGELOG.md
 ├── README.md

@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] - 2026-03-04
 
 ### Fixed
-- Moved `marketplace.json` from `.claude-plugin/` to repository root per plugin spec
 - Removed duplicate `version` field from `marketplace.json` (already in `plugin.json`)
 
 ### Added
